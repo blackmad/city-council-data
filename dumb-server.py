@@ -32,7 +32,7 @@ tree = STRtree(shapes)
 from flask import Flask, request
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/lookup')
 def lookup():
     lat = float(request.args.get('lat'))
     lng = float(request.args.get('lng'))
