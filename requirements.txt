@@ -1,0 +1,4 @@
+scrapy
+flask
+shapely
+geojsonio
