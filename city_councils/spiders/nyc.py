@@ -53,14 +53,16 @@ def extractContractInfoFromLines(lines):
             phoneNumber = phoneMatch.groups()[0]
 
     return {
+        'address': {
+            'line1': addressLine1,
+            'line2': addressLine2,
+            'line3': addressLine3,
+            'city': city,
+            'state': state,
+            'zip': zipCode
+        },
         'phone': phoneNumber,
         'fax': faxNumber,
-        'address_line1': addressLine1,
-        'address_line2': addressLine2,
-        'address_line3': addressLine3,
-        'address_city': city,
-        'address_state': state,
-        'address_zip': zipCode
     }
 
 
@@ -88,8 +90,9 @@ def extractContactInfo(contactInfoEl, defaultName):
     logging.debug('addresses %s' % addresses)
 
     return [{
-        'name': address['name'] or defaultName,
-        'address': extractContractInfoFromLines(address['lines'])
+        **extractContractInfoFromLines(address['lines']),
+        'name':
+        address['name'] or defaultName,
     } for address in addresses]
 
 
@@ -127,10 +130,11 @@ class NYCSpider(scrapy.Spider):
             if 'mailto:' in a:
                 info['email'] = a.split(':')[1]
 
-        info['twitter'] = getMetaValueByName(response, "twitter:creator")
-        info['image'] = getMetaValueByProperty(response, "og:image")
+        # info['channels'] = {}
+        # info['twitter'] = getMetaValueByName(response, "twitter:creator")
+        info['photoUrl'] = getMetaValueByProperty(response, "og:image")
         info['name'] = getMetaValueByProperty(response, "og:site_name")
-        info['url'] = getMetaValueByProperty(response, "og:url")
+        info['urls'] = [ getMetaValueByProperty(response, "og:url") ]
 
         district = getMetaValueByProperty(response, "og:title").split(' ')[1]
         info['district'] = district
