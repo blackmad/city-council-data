@@ -8,20 +8,49 @@ import os
 setting = get_project_settings()
 process = CrawlerProcess(setting)
 
-for spider_name in process.spider_loader.list():
-    f = tempfile.NamedTemporaryFile(delete=False)
-    tempFilename = f.name + '.json'
-    print ("Running spider %s" % (spider_name))
-    setting['FEED_URI'] = tempFilename
-    process2 = CrawlerProcess(setting)
-    process2.crawl(spider_name)
-    process2.start() # the script will block here until the crawling is finished
+def reprocessFile(file, outputRoot):
+    members = [json.loads(l) for l in open(file)]
 
-    print(tempFilename)
+    features = []
 
-    lines = ', '.join([l for l in open(tempFilename)])
-    data = json.loads('{"members": [' + lines + ']}')
-    json.dump(data, open(f'data/{spider_name}.json', 'w'))
+    for member in members:
+        if 'geojson' not in member:
+            continue
+        geojson = member['geojson']
+        del member['geojson']
+
+        feature = geojson
+        if geojson['type'] == 'FeatureCollection':
+            feature = geojson['features'][0]
+
+        feature['properties'] = member
+        
+        features.append(feature)
+
+    # data = json.loads('{"members": [' + lines + ']}')
+    json.dump({'members': members}, open(f'data/{outputRoot}.json', 'w'))
+
+    if features:
+        json.dump({
+       "type": "FeatureCollection",
+       "features": features
+    }, open(f'data/{outputRoot}.geojson', 'w'))
 
 
+def runSpiders():
+    for spider_name in process.spider_loader.list():
+        f = tempfile.NamedTemporaryFile(delete=False)
+        tempFilename = f.name + '.json'
+        print ("Running spider %s" % (spider_name))
+        setting['FEED_URI'] = tempFilename
+        process2 = CrawlerProcess(setting)
+        process2.crawl(spider_name)
+        process2.start() # the script will block here until the crawling is finished
 
+        print(tempFilename)
+
+        reproccesFile(tempFilename, spider_name)
+
+# runSpiders()
+
+reprocessFile('tmpwoogplcm.json', 'nyc')
