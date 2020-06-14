@@ -2,3 +2,4 @@ scrapy
 flask
 shapely
 geojsonio
+gunicorn
