@@ -124,7 +124,7 @@ class NYCSpider(scrapy.Spider):
             offices = offices + extractContactInfo(contactInfo,
                                                    'Legislative Office')
 
-        info['offices'] = offices
+        info['addresses'] = offices
 
         for a in response.css('.callout a::attr(href)').extract():
             if 'mailto:' in a:
@@ -135,6 +135,12 @@ class NYCSpider(scrapy.Spider):
         info['photoUrl'] = getMetaValueByProperty(response, "og:image")
         info['name'] = getMetaValueByProperty(response, "og:site_name")
         info['urls'] = [ getMetaValueByProperty(response, "og:url") ]
+
+        info['office'] = {
+            'level': 'locality',
+            'role': 'legislatorUpperBody',
+            'name': 'City Council Member'
+        }
 
         district = getMetaValueByProperty(response, "og:title").split(' ')[1]
         info['district'] = district
