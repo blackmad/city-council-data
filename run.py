@@ -49,8 +49,8 @@ def runSpiders():
 
         print(tempFilename)
 
-        reproccesFile(tempFilename, spider_name)
+        reprocessFile(tempFilename, spider_name)
 
-# runSpiders()
+runSpiders()
 
-reprocessFile('tmpwoogplcm.json', 'nyc')
+# reprocessFile('tmpwoogplcm.json', 'nyc')

@@ -31,12 +31,12 @@ def extractContractInfoFromLines(lines):
     # New York, NY 10027
 
     city = None
-    state = None
+    state = 'NY'
     zipCode = None
     if ',' in addressLines[-1]:
         city = addressLines[-1].split(',')[0]
-        state = addressLines[-1].split(',')[1].strip().split(' ')[0]
-        zipCode = addressLines[-1].split(',')[1].strip().split(' ')[1]
+        # state = addressLines[-1].split(',')[1].strip().split(' ')[0]
+        zipCode = addressLines[-1].split(',')[1].strip().split(' ')[-1]
 
     faxLine = [l for l in phoneLines if 'fax' in l or 'Fax' in l]
     faxNumber = None
