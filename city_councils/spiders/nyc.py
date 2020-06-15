@@ -135,6 +135,7 @@ class NYCSpider(scrapy.Spider):
         info['photoUrl'] = getMetaValueByProperty(response, "og:image")
         info['name'] = getMetaValueByProperty(response, "og:site_name")
         info['urls'] = [ getMetaValueByProperty(response, "og:url") ]
+        info['body'] = "New York City Council"
 
         info['office'] = {
             'level': 'locality',
