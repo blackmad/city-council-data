@@ -1,1 +1,233 @@
-{"members": [{"name": "Matt Haney", "body": "SF Board of Supervisors", "district": "6", "addresses": [{"address": {"line1": "City Hall", "line2": "1 Dr. Carlton B. Goodlett Place, Room 244", "line3": null, "city": "San Francisco", "state": "CA", "zip": "94102-4689"}, "phone": "(415) 554-7970", "fax": "(415) 554-7974"}], "office": {"level": "locality", "role": "legislatorUpperBody", "name": "Board of Supervisors Member"}}, {"email": "mandelmanstaff@sfgov.org", "name": "Rafael Mandelman", "body": "SF Board of Supervisors", "district": "8", "addresses": [{"address": {"line1": "City Hall", "line2": "1 Dr. Carlton B. Goodlett Place, Room 244", "line3": null, "city": "San Francisco", "state": "CA", "zip": "94102-4689"}, "phone": "415-554-6968", "fax": "415-554-6909"}], "office": {"level": "locality", "role": "legislatorUpperBody", "name": "Board of Supervisors Member"}}, {"name": "Dean Preston", "body": "SF Board of Supervisors", "district": "5", "addresses": [{"address": {"line1": "1 Dr. Carlton B. Goodlett Place", "line2": "City Hall, Room 244", "line3": "(415) 554-7630 - Voice", "city": null, "state": null, "zip": null}, "phone": "(415) 554-7630", "fax": "(415) 554-7634"}], "office": {"level": "locality", "role": "legislatorUpperBody", "name": "Board of Supervisors Member"}}, {"email": "waltonstaff@sfgov.org?subject=", "name": "Shamann Walton", "body": "SF Board of Supervisors", "district": "10", "addresses": [{"address": {"line1": "City Hall", "line2": "1 Dr. Carlton B. Goodlett Place, Room 244", "line3": null, "city": "San Francisco", "state": "CA", "zip": "94102-4689"}, "phone": "(415) 554-7670", "fax": "(415) 554-7674"}], "office": {"level": "locality", "role": "legislatorUpperBody", "name": "Board of Supervisors Member"}}, {"email": "Sandra.Fewer@sfgov.org", "name": "Sandra Lee Fewer", "body": "SF Board of Supervisors", "district": "1", "addresses": [{"address": {"line1": "City Hall", "line2": "1 Dr. Carlton B. Goodlett Place, Room 244", "line3": null, "city": "San Francisco", "state": "CA", "zip": "94102-4689"}, "phone": "(415) 554-7410", "fax": "(415) 554-7415"}], "office": {"level": "locality", "role": "legislatorUpperBody", "name": "Board of Supervisors Member"}}, {"email": "Ahsha.Safai@sfgov.org", "name": "Ahsha Safai", "body": "SF Board of Supervisors", "district": "11", "addresses": [{"address": {"line1": "City Hall", "line2": "1 Dr. Carlton B. Goodlett Place, Room 244", "line3": null, "city": "San Francisco", "state": "CA", "zip": "94102-4689"}, "phone": "(415) 554-6975", "fax": "(415) 554-6979"}], "office": {"level": "locality", "role": "legislatorUpperBody", "name": "Board of Supervisors Member"}}, {"email": "carolyn.goossen@sfgov.org?subject=Newsletter", "name": "Hillary Ronen", "body": "SF Board of Supervisors", "district": "9", "addresses": [{"address": {"line1": "City Hall", "line2": "1 Dr. Carlton B. Goodlett Place, Room 244", "line3": null, "city": "San Francisco", "state": "CA", "zip": "94102-4689"}, "phone": "(415) 554-5144", "fax": "(415) 554-6255"}], "office": {"level": "locality", "role": "legislatorUpperBody", "name": "Board of Supervisors Member"}}, {"name": "Gordon Mar", "body": "SF Board of Supervisors", "district": "4", "addresses": [{"address": {"line1": "City Hall", "line2": "1 Dr. Carlton B. Goodlett Place, Room 244", "line3": null, "city": "San Francisco", "state": "CA", "zip": "94102-4689"}, "phone": "(415) 554-7460", "fax": "(415) 554-7432"}], "office": {"level": "locality", "role": "legislatorUpperBody", "name": "Board of Supervisors Member"}}]}
+{
+    "members": [
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "San Francisco",
+                        "line1": "City Hall",
+                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
+                        "line3": null,
+                        "state": "CA",
+                        "zip": "94102-4689"
+                    },
+                    "fax": [
+                        "(415) 554-7974"
+                    ],
+                    "phones": [
+                        "(415) 554-7970"
+                    ]
+                }
+            ],
+            "body": "SF Board of Supervisors",
+            "district": "6",
+            "name": "Matt Haney",
+            "office": {
+                "level": "locality",
+                "name": "Board of Supervisors Member",
+                "role": "legislatorUpperBody"
+            }
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "San Francisco",
+                        "line1": "City Hall",
+                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
+                        "line3": null,
+                        "state": "CA",
+                        "zip": "94102-4689"
+                    },
+                    "fax": [
+                        "(415) 554-6255"
+                    ],
+                    "phones": [
+                        "(415) 554-5144"
+                    ]
+                }
+            ],
+            "body": "SF Board of Supervisors",
+            "district": "9",
+            "email": "carolyn.goossen@sfgov.org?subject=Newsletter",
+            "name": "Hillary Ronen",
+            "office": {
+                "level": "locality",
+                "name": "Board of Supervisors Member",
+                "role": "legislatorUpperBody"
+            }
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "San Francisco",
+                        "line1": "City Hall",
+                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
+                        "line3": null,
+                        "state": "CA",
+                        "zip": "94102-4689"
+                    },
+                    "fax": [
+                        "(415) 554-6979"
+                    ],
+                    "phones": [
+                        "(415) 554-6975"
+                    ]
+                }
+            ],
+            "body": "SF Board of Supervisors",
+            "district": "11",
+            "email": "Ahsha.Safai@sfgov.org",
+            "name": "Ahsha Safai",
+            "office": {
+                "level": "locality",
+                "name": "Board of Supervisors Member",
+                "role": "legislatorUpperBody"
+            }
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": null,
+                        "line1": "1 Dr. Carlton B. Goodlett Place",
+                        "line2": "City Hall, Room 244",
+                        "line3": "(415) 554-7630 - Voice",
+                        "state": null,
+                        "zip": null
+                    },
+                    "fax": [
+                        "(415) 554-7634"
+                    ],
+                    "phones": [
+                        "(415) 554-7630"
+                    ]
+                }
+            ],
+            "body": "SF Board of Supervisors",
+            "district": "5",
+            "name": "Dean Preston",
+            "office": {
+                "level": "locality",
+                "name": "Board of Supervisors Member",
+                "role": "legislatorUpperBody"
+            }
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "San Francisco",
+                        "line1": "City Hall",
+                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
+                        "line3": null,
+                        "state": "CA",
+                        "zip": "94102-4689"
+                    },
+                    "fax": [
+                        "(415) 554-7432"
+                    ],
+                    "phones": [
+                        "(415) 554-7460"
+                    ]
+                }
+            ],
+            "body": "SF Board of Supervisors",
+            "district": "4",
+            "name": "Gordon Mar",
+            "office": {
+                "level": "locality",
+                "name": "Board of Supervisors Member",
+                "role": "legislatorUpperBody"
+            }
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "San Francisco",
+                        "line1": "City Hall",
+                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
+                        "line3": null,
+                        "state": "CA",
+                        "zip": "94102-4689"
+                    },
+                    "fax": [
+                        "415-554-6909"
+                    ],
+                    "phones": [
+                        "415-554-6968"
+                    ]
+                }
+            ],
+            "body": "SF Board of Supervisors",
+            "district": "8",
+            "email": "mandelmanstaff@sfgov.org",
+            "name": "Rafael Mandelman",
+            "office": {
+                "level": "locality",
+                "name": "Board of Supervisors Member",
+                "role": "legislatorUpperBody"
+            }
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "San Francisco",
+                        "line1": "City Hall",
+                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
+                        "line3": null,
+                        "state": "CA",
+                        "zip": "94102-4689"
+                    },
+                    "fax": [
+                        "(415) 554-7415"
+                    ],
+                    "phones": [
+                        "(415) 554-7410"
+                    ]
+                }
+            ],
+            "body": "SF Board of Supervisors",
+            "district": "1",
+            "email": "Sandra.Fewer@sfgov.org",
+            "name": "Sandra Lee Fewer",
+            "office": {
+                "level": "locality",
+                "name": "Board of Supervisors Member",
+                "role": "legislatorUpperBody"
+            }
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "San Francisco",
+                        "line1": "City Hall",
+                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
+                        "line3": null,
+                        "state": "CA",
+                        "zip": "94102-4689"
+                    },
+                    "fax": [
+                        "(415) 554-7674"
+                    ],
+                    "phones": [
+                        "(415) 554-7670"
+                    ]
+                }
+            ],
+            "body": "SF Board of Supervisors",
+            "district": "10",
+            "email": "waltonstaff@sfgov.org?subject=",
+            "name": "Shamann Walton",
+            "office": {
+                "level": "locality",
+                "name": "Board of Supervisors Member",
+                "role": "legislatorUpperBody"
+            }
+        }
+    ]
+}

@@ -2,30 +2,41 @@ import re
 phoneNumberPattern = re.compile('(\(?\d{3}\)?[- ]?\d{3}-\d{4})')
 
 def getFax(lines):
-  faxLine = [l for l in lines if 'fax' in l or 'Fax' in l]
-  faxNumber = None
-  if faxLine:
-      faxMatch = phoneNumberPattern.search(faxLine[0] or '')
-      if faxMatch:
-          faxNumber = faxMatch.groups()[0]
-
-def getFax(lines):
+  if isinstance(lines, str):
+    lines = lines.split('\n')
   phoneLine = [l for l in lines if 'fax' in l or 'Fax' in l and phoneNumberPattern.search(l)]
   phoneNumber = None
   if phoneLine:
-      phoneMatch = phoneNumberPattern.search(phoneLine[0] or '')
-      if phoneMatch:
-        return phoneMatch.groups()[0]
+      matches = phoneNumberPattern.findall(phoneLine[0] or '')
+      if not matches:
+        return None
+      return matches
 
 def getPhone(lines):
+  if isinstance(lines, str):
+    lines = lines.split('\n')
   phoneLine = [l for l in lines if 'fax' not in l and 'Fax' not in l and phoneNumberPattern.search(l)]
   phoneNumber = None
   if phoneLine:
-      phoneMatch = phoneNumberPattern.search(phoneLine[0] or '')
-      if phoneMatch:
-        return phoneMatch.groups()[0]
+      matches = phoneNumberPattern.findall(phoneLine[0] or '')
+      if not matches:
+        return None
+      return matches
+
+def getLinesUntilPhone(lines):
+  if isinstance(lines, str):
+    lines = lines.split('\n')
+
+  addressLines = []
+  for l in lines:
+    if phoneNumberPattern.search(l):
+      break
+    addressLines.append(l.strip())
+
+  return addressLines
 
 def getAddress(addressLines):
+  print(addressLines)
   addressLine1 = addressLines[0]
   addressLine2 = None
   addressLine3 = None
@@ -56,3 +67,23 @@ def getAddress(addressLines):
     'state': state,
     'zip': zipCode
   }
+
+from io import StringIO
+from html.parser import HTMLParser
+
+class MLStripper(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.reset()
+        self.strict = False
+        self.convert_charrefs= True
+        self.text = StringIO()
+    def handle_data(self, d):
+        self.text.write(d)
+    def get_data(self):
+        return self.text.getvalue()
+
+def strip_tags(html):
+    s = MLStripper()
+    s.feed(html)
+    return s.get_data()

@@ -6,9 +6,9 @@ import json
 import os
 from multiprocessing import Process
 
-
 setting = get_project_settings()
 process = CrawlerProcess(setting)
+
 
 def reprocessFile(file, outputRoot):
     members = [json.loads(l) for l in open(file)]
@@ -26,17 +26,23 @@ def reprocessFile(file, outputRoot):
             feature = geojson['features'][0]
 
         feature['properties'] = member
-        
+
         features.append(feature)
 
     # data = json.loads('{"members": [' + lines + ']}')
-    json.dump({'members': members}, open(f'data/{outputRoot}.json', 'w'))
+    json.dump({'members': members},
+              open(f'data/{outputRoot}.json', 'w'),
+              sort_keys=True,
+              indent=4)
 
     if features:
         json.dump({
-       "type": "FeatureCollection",
-       "features": features
-    }, open(f'data/{outputRoot}.geojson', 'w'))
+            "type": "FeatureCollection",
+            "features": features
+        },
+                  open(f'data/{outputRoot}.geojson', 'w'),
+                  sort_keys=True,
+                  indent=4)
 
 
 def execute_crawling(spider_name, tempFilename):
@@ -44,20 +50,23 @@ def execute_crawling(spider_name, tempFilename):
     setting['FEED_URI'] = tempFilename
     process2 = CrawlerProcess(setting)
     process2.crawl(spider_name)
-    process2.start() # the script will block here until the crawling is finished
+    process2.start(
+    )  # the script will block here until the crawling is finished
+
 
 def runSpiders():
     for spider_name in process.spider_loader.list():
         f = tempfile.NamedTemporaryFile(delete=False)
         tempFilename = f.name + '.json'
-        print ("Running spider %s" % (spider_name))
+        print("Running spider %s" % (spider_name))
 
         p = Process(target=execute_crawling, args=(spider_name, tempFilename))
         p.start()
-        p.join() # this blocks until the process terminates
+        p.join()  # this blocks until the process terminates
         print(tempFilename)
 
         reprocessFile(tempFilename, spider_name)
+
 
 if __name__ == '__main__':
     runSpiders()

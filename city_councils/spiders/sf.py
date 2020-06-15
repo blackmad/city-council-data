@@ -61,7 +61,7 @@ class SFSpider(CrawlSpider):
         info['addresses'] = [
             {
               'address': getAddress(addressLines),
-              'phone': getPhone(lines),
+              'phones': getPhone(lines),
               'fax': getFax(lines),
           }
         ]
