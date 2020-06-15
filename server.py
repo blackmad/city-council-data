@@ -40,7 +40,7 @@ def lookup():
     lat = float(request.args.get('lat'))
     lng = float(request.args.get('lng'))
     point = Point(lng, lat)
-    return {'data': [o.properties for o in tree.query(point)]}
+    return {'data': [o.properties for o in tree.query(point) if o.contains(point)]}
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
