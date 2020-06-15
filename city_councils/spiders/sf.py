@@ -7,6 +7,16 @@ from scrapy.linkextractors import LinkExtractor
 
 from .utils import phoneNumberPattern, getFax, getPhone, getAddress
 
+import requests
+
+geojsonData = requests.get('https://data.sfgov.org/api/geospatial/8nkz-x4ny?method=export&format=GeoJSON').json()
+
+def getFeature(district):
+  hits = [j for j in geojsonData['features'] if j['properties']['supervisor'] == district]
+  if hits:
+    return hits[0]
+  return None
+
 class SFSpider(CrawlSpider):
     name = 'sf'
     start_urls = [
@@ -34,8 +44,10 @@ class SFSpider(CrawlSpider):
         info['name'] = response.css('.sup_name ::text').extract()[0]
         info['body'] = 'SF Board of Supervisors'
 
-        info['district'] = response.css('.sup_district ::text').extract()[0].split(' ')[1]
+        district = response.css('.sup_district ::text').extract()[0].split(' ')[1]
+        info['district'] = district
 
+        info['geojson'] = getFeature(district)
   
         contactInfo = response.xpath("//*[contains(text(), 'Contact Info')]/following::p").extract()[0].replace('<br>', '').replace('<p>', '').replace('</p>', '')
         print ('xp:' + contactInfo)
