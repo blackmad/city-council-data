@@ -65,26 +65,11 @@ class SFSpider(CrawlSpider):
               'fax': getFax(lines),
           }
         ]
+        info['office'] = {
+            'level': 'locality',
+            'role': 'legislatorUpperBody',
+            'name': 'Board of Supervisors Member'
+        }
 
-        # # info['channels'] = {}
-        # # info['twitter'] = getMetaValueByName(response, "twitter:creator")
-        # info['photoUrl'] = getMetaValueByProperty(response, "og:image")
-        # info['name'] = getMetaValueByProperty(response, "og:site_name")
-        # info['urls'] = [ getMetaValueByProperty(response, "og:url") ]
-        # info['body'] = "New York City Council"
-
-        # info['office'] = {
-        #     'level': 'locality',
-        #     'role': 'legislatorUpperBody',
-        #     'name': 'City Council Member'
-        # }
-
-        # district = getMetaValueByProperty(response, "og:title").split(' ')[1]
-        # info['district'] = district
-
-        # r = requests.get(
-        #     f'https://nyc-council.carto.com/api/v2/sql?q=SELECT%20*%20FROM%20nyc_city_council_dist_cm%20WHERE%20dist%3D{district}&format=geojson'
-        # )
-        # info['geojson'] = r.json()
 
         yield info

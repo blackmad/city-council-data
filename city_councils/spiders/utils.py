@@ -45,7 +45,7 @@ def getAddress(addressLines):
       city = addressLines[-1].split(',')[0]
       otherPart = addressLines[-1].split(',')[1]
       match = stateAndZipPattern.search(otherPart)
-      state = match.groups()[0]
+      state = match.groups()[0].strip().upper()
       zipCode = match.groups()[1]
   
   return {
