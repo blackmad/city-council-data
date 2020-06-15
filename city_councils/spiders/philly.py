@@ -36,9 +36,9 @@ class PhillySpider(CrawlSpider):
     ]
 
     def parse(self, response):
-        info = {}
-
         for card in response.css('.x-card-outer'):
+          info = {}
+
           info['name'] = card.css('.x-face-title ::text').extract()[0]
 
           districtPattern = re.compile('DISTRICT (\d+)')

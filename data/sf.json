@@ -40,35 +40,6 @@
                         "zip": "94102-4689"
                     },
                     "fax": [
-                        "(415) 554-6255"
-                    ],
-                    "phones": [
-                        "(415) 554-5144"
-                    ]
-                }
-            ],
-            "body": "SF Board of Supervisors",
-            "district": "9",
-            "email": "carolyn.goossen@sfgov.org?subject=Newsletter",
-            "name": "Hillary Ronen",
-            "office": {
-                "level": "locality",
-                "name": "Board of Supervisors Member",
-                "role": "legislatorUpperBody"
-            }
-        },
-        {
-            "addresses": [
-                {
-                    "address": {
-                        "city": "San Francisco",
-                        "line1": "City Hall",
-                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
-                        "line3": null,
-                        "state": "CA",
-                        "zip": "94102-4689"
-                    },
-                    "fax": [
                         "(415) 554-6979"
                     ],
                     "phones": [
@@ -90,24 +61,25 @@
             "addresses": [
                 {
                     "address": {
-                        "city": null,
-                        "line1": "1 Dr. Carlton B. Goodlett Place",
-                        "line2": "City Hall, Room 244",
-                        "line3": "(415) 554-7630 - Voice",
-                        "state": null,
-                        "zip": null
+                        "city": "San Francisco",
+                        "line1": "City Hall",
+                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
+                        "line3": null,
+                        "state": "CA",
+                        "zip": "94102-4689"
                     },
                     "fax": [
-                        "(415) 554-7634"
+                        "(415) 554-7674"
                     ],
                     "phones": [
-                        "(415) 554-7630"
+                        "(415) 554-7670"
                     ]
                 }
             ],
             "body": "SF Board of Supervisors",
-            "district": "5",
-            "name": "Dean Preston",
+            "district": "10",
+            "email": "waltonstaff@sfgov.org?subject=",
+            "name": "Shamann Walton",
             "office": {
                 "level": "locality",
                 "name": "Board of Supervisors Member",
@@ -146,25 +118,24 @@
             "addresses": [
                 {
                     "address": {
-                        "city": "San Francisco",
-                        "line1": "City Hall",
-                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
-                        "line3": null,
-                        "state": "CA",
-                        "zip": "94102-4689"
+                        "city": null,
+                        "line1": "1 Dr. Carlton B. Goodlett Place",
+                        "line2": "City Hall, Room 244",
+                        "line3": "(415) 554-7630 - Voice",
+                        "state": null,
+                        "zip": null
                     },
                     "fax": [
-                        "415-554-6909"
+                        "(415) 554-7634"
                     ],
                     "phones": [
-                        "415-554-6968"
+                        "(415) 554-7630"
                     ]
                 }
             ],
             "body": "SF Board of Supervisors",
-            "district": "8",
-            "email": "mandelmanstaff@sfgov.org",
-            "name": "Rafael Mandelman",
+            "district": "5",
+            "name": "Dean Preston",
             "office": {
                 "level": "locality",
                 "name": "Board of Supervisors Member",
@@ -212,17 +183,46 @@
                         "zip": "94102-4689"
                     },
                     "fax": [
-                        "(415) 554-7674"
+                        "415-554-6909"
                     ],
                     "phones": [
-                        "(415) 554-7670"
+                        "415-554-6968"
                     ]
                 }
             ],
             "body": "SF Board of Supervisors",
-            "district": "10",
-            "email": "waltonstaff@sfgov.org?subject=",
-            "name": "Shamann Walton",
+            "district": "8",
+            "email": "mandelmanstaff@sfgov.org",
+            "name": "Rafael Mandelman",
+            "office": {
+                "level": "locality",
+                "name": "Board of Supervisors Member",
+                "role": "legislatorUpperBody"
+            }
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "San Francisco",
+                        "line1": "City Hall",
+                        "line2": "1 Dr. Carlton B. Goodlett Place, Room 244",
+                        "line3": null,
+                        "state": "CA",
+                        "zip": "94102-4689"
+                    },
+                    "fax": [
+                        "(415) 554-6255"
+                    ],
+                    "phones": [
+                        "(415) 554-5144"
+                    ]
+                }
+            ],
+            "body": "SF Board of Supervisors",
+            "district": "9",
+            "email": "carolyn.goossen@sfgov.org?subject=Newsletter",
+            "name": "Hillary Ronen",
             "office": {
                 "level": "locality",
                 "name": "Board of Supervisors Member",
