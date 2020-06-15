@@ -24,6 +24,8 @@ def reprocessFile(file, outputRoot):
         feature = geojson
         if geojson['type'] == 'FeatureCollection':
             feature = geojson['features'][0]
+        if 'coordinates' in geojson:
+            feature = {'type': 'Feature', 'geometry': geojson}
 
         feature['properties'] = member
 
@@ -71,4 +73,3 @@ def runSpiders():
 if __name__ == '__main__':
     runSpiders()
 
-# reprocessFile('tmpwoogplcm.json', 'nyc')

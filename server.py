@@ -15,6 +15,9 @@ for file in os.listdir(DATA_DIR):
   f = open(os.path.join(DATA_DIR, file))
   js = json.load(f)
   for feature in js['features']:
+    if 'geometry' not in feature:
+      print('bad feature %s' % feature)
+      continue
     s = shape(feature['geometry'])
     s.properties = feature['properties']
     shapes.append(s)

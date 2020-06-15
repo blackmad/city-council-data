@@ -124,6 +124,106 @@
                 {
                     "address": {
                         "city": "New York",
+                        "line1": "101 Lafayette St, 9th Floor",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "10013"
+                    },
+                    "fax": [
+                        "212-587-3138"
+                    ],
+                    "name": "District Office",
+                    "phone": [
+                        "212-587-3159"
+                    ]
+                },
+                {
+                    "address": {
+                        "city": "New York",
+                        "line1": "250 Broadway, Suite 1762",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "10007"
+                    },
+                    "fax": [
+                        "212-442-1563"
+                    ],
+                    "name": "Legislative Office",
+                    "phone": [
+                        "212-788-7259"
+                    ]
+                }
+            ],
+            "body": "New York City Council",
+            "district": "1",
+            "email": "chin@council.nyc.gov",
+            "name": "Margaret Chin",
+            "office": {
+                "level": "locality",
+                "name": "City Council Member",
+                "role": "legislatorUpperBody"
+            },
+            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/2/2016/05/6-photo_committee-700x467.jpg",
+            "urls": [
+                "https://council.nyc.gov/margaret-chin/district-1/"
+            ]
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": null,
+                        "line1": "(TEMPORARILY CLOSED)",
+                        "line2": null,
+                        "line3": null,
+                        "state": null,
+                        "zip": null
+                    },
+                    "fax": [
+                        "212-677-1990"
+                    ],
+                    "name": "District Office",
+                    "phone": [
+                        "212-677-1077"
+                    ]
+                },
+                {
+                    "address": {
+                        "city": "New York",
+                        "line1": "(TEMPORARILY CLOSED)",
+                        "line2": "250 Broadway, Suite 1734",
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "10007"
+                    },
+                    "fax": null,
+                    "name": "Legislative Office",
+                    "phone": [
+                        "212-788-7366"
+                    ]
+                }
+            ],
+            "body": "New York City Council",
+            "district": "2",
+            "email": "District2@council.nyc.gov",
+            "name": "Carlina Rivera",
+            "office": {
+                "level": "locality",
+                "name": "City Council Member",
+                "role": "legislatorUpperBody"
+            },
+            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/65/2018/01/38866914005_5f25ed6ba1_o-700x396.jpg",
+            "urls": [
+                "https://council.nyc.gov/carlina-rivera/district-2/"
+            ]
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "New York",
                         "line1": "224 West 30th St, Suite 1206",
                         "line2": null,
                         "line3": null,
@@ -173,101 +273,95 @@
                 {
                     "address": {
                         "city": "New York",
-                        "line1": "618 W. 177th Street, Ground Floor",
+                        "line1": "244 East 93rd Street",
                         "line2": null,
                         "line3": null,
                         "state": "NY",
-                        "zip": "10033"
+                        "zip": "10128"
                     },
                     "fax": [
-                        "917-521-1293"
+                        "212-980-1828"
                     ],
                     "name": "District Office",
                     "phone": [
-                        "917-521-2616"
+                        "212-860-1950"
                     ]
                 },
                 {
                     "address": {
                         "city": "New York",
-                        "line1": "250 Broadway, Suite 1763",
+                        "line1": "250 Broadway, Suite 1807",
                         "line2": null,
                         "line3": null,
                         "state": "NY",
                         "zip": "10007"
                     },
-                    "fax": [
-                        "212-227-1215"
-                    ],
+                    "fax": null,
                     "name": "Legislative Office",
                     "phone": [
-                        "212-788-7053"
+                        "212-788-6865"
                     ]
                 }
             ],
             "body": "New York City Council",
-            "district": "10",
-            "email": "yrodriguez@council.nyc.gov",
-            "name": "Ydanis Rodriguez",
+            "district": "5",
+            "email": "BKallos@BenKallos.com",
+            "name": "Ben Kallos",
             "office": {
                 "level": "locality",
                 "name": "City Council Member",
                 "role": "legislatorUpperBody"
             },
-            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/11/2016/05/Ydanis-700x467.jpg",
+            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/6/2016/05/Ben-Kallos-700x394.jpg",
             "urls": [
-                "https://council.nyc.gov/ydanis-rodriguez/district-10/"
+                "https://council.nyc.gov/ben-kallos/district-5/"
             ]
         },
         {
             "addresses": [
                 {
                     "address": {
-                        "city": "Bronx",
-                        "line1": "277 West 231st Street",
+                        "city": "New York",
+                        "line1": "211 East 43rd Street, Suite 1205",
                         "line2": null,
                         "line3": null,
                         "state": "NY",
-                        "zip": "10463"
+                        "zip": "10017"
                     },
-                    "fax": [
-                        "(718) 549-9945"
-                    ],
-                    "name": "Kingsbridge Office",
+                    "fax": null,
+                    "name": "District Office",
                     "phone": [
-                        "(718) 549-7300"
+                        "212-818-0580"
                     ]
                 },
                 {
                     "address": {
                         "city": "New York",
-                        "line1": "250 Broadway, Suite 1868",
-                        "line2": null,
+                        "line1": "Legislative Office",
+                        "line2": "250 Broadway, Suite 1815",
                         "line3": null,
                         "state": "NY",
                         "zip": "10007"
                     },
-                    "fax": [
-                        "(212) 442-7827"
-                    ],
+                    "fax": null,
                     "name": "Legislative Office",
                     "phone": [
-                        "(212) 788-7080"
+                        "212-788-7393"
                     ]
                 }
             ],
             "body": "New York City Council",
-            "district": "11",
-            "email": "District11@council.nyc.gov",
-            "name": "Andrew Cohen",
+            "district": "4",
+            "email": "KPowers@council.nyc.gov",
+            "name": "Keith Powers",
             "office": {
                 "level": "locality",
                 "name": "City Council Member",
                 "role": "legislatorUpperBody"
             },
-            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/12/2020/03/39243537310_ab01cc9969_z.jpg",
+            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/64/2018/01/GH1_0623-28229-700x467.jpg",
             "urls": [
-                "https://council.nyc.gov/andrew-cohen/district-11/"
+                "https://council.nyc.gov/keith-powers/district-4/"
             ]
         },
         {
@@ -324,57 +418,6 @@
                 {
                     "address": {
                         "city": "New York",
-                        "line1": "101 Lafayette St, 9th Floor",
-                        "line2": null,
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "10013"
-                    },
-                    "fax": [
-                        "212-587-3138"
-                    ],
-                    "name": "District Office",
-                    "phone": [
-                        "212-587-3159"
-                    ]
-                },
-                {
-                    "address": {
-                        "city": "New York",
-                        "line1": "250 Broadway, Suite 1762",
-                        "line2": null,
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "10007"
-                    },
-                    "fax": [
-                        "212-442-1563"
-                    ],
-                    "name": "Legislative Office",
-                    "phone": [
-                        "212-788-7259"
-                    ]
-                }
-            ],
-            "body": "New York City Council",
-            "district": "1",
-            "email": "chin@council.nyc.gov",
-            "name": "Margaret Chin",
-            "office": {
-                "level": "locality",
-                "name": "City Council Member",
-                "role": "legislatorUpperBody"
-            },
-            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/2/2016/05/6-photo_committee-700x467.jpg",
-            "urls": [
-                "https://council.nyc.gov/margaret-chin/district-1/"
-            ]
-        },
-        {
-            "addresses": [
-                {
-                    "address": {
-                        "city": "New York",
                         "line1": "500 West 141st Street",
                         "line2": null,
                         "line3": null,
@@ -419,6 +462,57 @@
             "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/8/2016/05/levine-700x476.jpg",
             "urls": [
                 "https://council.nyc.gov/mark-levine/district-7/"
+            ]
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "New York",
+                        "line1": "618 W. 177th Street, Ground Floor",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "10033"
+                    },
+                    "fax": [
+                        "917-521-1293"
+                    ],
+                    "name": "District Office",
+                    "phone": [
+                        "917-521-2616"
+                    ]
+                },
+                {
+                    "address": {
+                        "city": "New York",
+                        "line1": "250 Broadway, Suite 1763",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "10007"
+                    },
+                    "fax": [
+                        "212-227-1215"
+                    ],
+                    "name": "Legislative Office",
+                    "phone": [
+                        "212-788-7053"
+                    ]
+                }
+            ],
+            "body": "New York City Council",
+            "district": "10",
+            "email": "yrodriguez@council.nyc.gov",
+            "name": "Ydanis Rodriguez",
+            "office": {
+                "level": "locality",
+                "name": "City Council Member",
+                "role": "legislatorUpperBody"
+            },
+            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/11/2016/05/Ydanis-700x467.jpg",
+            "urls": [
+                "https://council.nyc.gov/ydanis-rodriguez/district-10/"
             ]
         },
         {
@@ -527,151 +621,6 @@
             "addresses": [
                 {
                     "address": {
-                        "city": null,
-                        "line1": "(TEMPORARILY CLOSED)",
-                        "line2": null,
-                        "line3": null,
-                        "state": null,
-                        "zip": null
-                    },
-                    "fax": [
-                        "212-677-1990"
-                    ],
-                    "name": "District Office",
-                    "phone": [
-                        "212-677-1077"
-                    ]
-                },
-                {
-                    "address": {
-                        "city": "New York",
-                        "line1": "(TEMPORARILY CLOSED)",
-                        "line2": "250 Broadway, Suite 1734",
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "10007"
-                    },
-                    "fax": null,
-                    "name": "Legislative Office",
-                    "phone": [
-                        "212-788-7366"
-                    ]
-                }
-            ],
-            "body": "New York City Council",
-            "district": "2",
-            "email": "District2@council.nyc.gov",
-            "name": "Carlina Rivera",
-            "office": {
-                "level": "locality",
-                "name": "City Council Member",
-                "role": "legislatorUpperBody"
-            },
-            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/65/2018/01/38866914005_5f25ed6ba1_o-700x396.jpg",
-            "urls": [
-                "https://council.nyc.gov/carlina-rivera/district-2/"
-            ]
-        },
-        {
-            "addresses": [
-                {
-                    "address": {
-                        "city": "New York",
-                        "line1": "244 East 93rd Street",
-                        "line2": null,
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "10128"
-                    },
-                    "fax": [
-                        "212-980-1828"
-                    ],
-                    "name": "District Office",
-                    "phone": [
-                        "212-860-1950"
-                    ]
-                },
-                {
-                    "address": {
-                        "city": "New York",
-                        "line1": "250 Broadway, Suite 1807",
-                        "line2": null,
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "10007"
-                    },
-                    "fax": null,
-                    "name": "Legislative Office",
-                    "phone": [
-                        "212-788-6865"
-                    ]
-                }
-            ],
-            "body": "New York City Council",
-            "district": "5",
-            "email": "BKallos@BenKallos.com",
-            "name": "Ben Kallos",
-            "office": {
-                "level": "locality",
-                "name": "City Council Member",
-                "role": "legislatorUpperBody"
-            },
-            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/6/2016/05/Ben-Kallos-700x394.jpg",
-            "urls": [
-                "https://council.nyc.gov/ben-kallos/district-5/"
-            ]
-        },
-        {
-            "addresses": [
-                {
-                    "address": {
-                        "city": "New York",
-                        "line1": "211 East 43rd Street, Suite 1205",
-                        "line2": null,
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "10017"
-                    },
-                    "fax": null,
-                    "name": "District Office",
-                    "phone": [
-                        "212-818-0580"
-                    ]
-                },
-                {
-                    "address": {
-                        "city": "New York",
-                        "line1": "Legislative Office",
-                        "line2": "250 Broadway, Suite 1815",
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "10007"
-                    },
-                    "fax": null,
-                    "name": "Legislative Office",
-                    "phone": [
-                        "212-788-7393"
-                    ]
-                }
-            ],
-            "body": "New York City Council",
-            "district": "4",
-            "email": "KPowers@council.nyc.gov",
-            "name": "Keith Powers",
-            "office": {
-                "level": "locality",
-                "name": "City Council Member",
-                "role": "legislatorUpperBody"
-            },
-            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/64/2018/01/GH1_0623-28229-700x467.jpg",
-            "urls": [
-                "https://council.nyc.gov/keith-powers/district-4/"
-            ]
-        },
-        {
-            "addresses": [
-                {
-                    "address": {
                         "city": "Bronx",
                         "line1": "2065 Morris Avenue",
                         "line2": null,
@@ -768,6 +717,191 @@
             "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/16/2018/10/Cover-Photo-2-700x449.jpg",
             "urls": [
                 "https://council.nyc.gov/ritchie-torres/district-15/"
+            ]
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "Bronx",
+                        "line1": "277 West 231st Street",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "10463"
+                    },
+                    "fax": [
+                        "(718) 549-9945"
+                    ],
+                    "name": "Kingsbridge Office",
+                    "phone": [
+                        "(718) 549-7300"
+                    ]
+                },
+                {
+                    "address": {
+                        "city": "New York",
+                        "line1": "250 Broadway, Suite 1868",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "10007"
+                    },
+                    "fax": [
+                        "(212) 442-7827"
+                    ],
+                    "name": "Legislative Office",
+                    "phone": [
+                        "(212) 788-7080"
+                    ]
+                }
+            ],
+            "body": "New York City Council",
+            "district": "11",
+            "email": "District11@council.nyc.gov",
+            "name": "Andrew Cohen",
+            "office": {
+                "level": "locality",
+                "name": "City Council Member",
+                "role": "legislatorUpperBody"
+            },
+            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/12/2020/03/39243537310_ab01cc9969_z.jpg",
+            "urls": [
+                "https://council.nyc.gov/andrew-cohen/district-11/"
+            ]
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "Bayside",
+                        "line1": "42-40 Bell Boulevard, Suite 507",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "11361"
+                    },
+                    "fax": [
+                        "718-631-4100"
+                    ],
+                    "name": "District Office",
+                    "phone": [
+                        "718-619-8611"
+                    ]
+                },
+                {
+                    "address": {
+                        "city": "New York",
+                        "line1": "250 Broadway, Suite 1792",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "10007"
+                    },
+                    "fax": [
+                        "212-788-1860"
+                    ],
+                    "name": "Legislative Office",
+                    "phone": [
+                        "212-788-7250"
+                    ]
+                }
+            ],
+            "body": "New York City Council",
+            "district": "19",
+            "email": "district19@council.nyc.gov",
+            "name": "Paul Vallone",
+            "office": {
+                "level": "locality",
+                "name": "City Council Member",
+                "role": "legislatorUpperBody"
+            },
+            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/20/2016/05/paul-vallone.jpg",
+            "urls": [
+                "https://council.nyc.gov/paul-vallone/district-19/"
+            ]
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "Flushing",
+                        "line1": "135-27 38 Ave, Suite 388",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "11354"
+                    },
+                    "fax": [
+                        "718-888-0331"
+                    ],
+                    "name": "District Office",
+                    "phone": [
+                        "718-888-8747"
+                    ]
+                }
+            ],
+            "body": "New York City Council",
+            "district": "20",
+            "email": "pkoo@council.nyc.gov",
+            "name": "Peter Koo",
+            "office": {
+                "level": "locality",
+                "name": "City Council Member",
+                "role": "legislatorUpperBody"
+            },
+            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/21/2016/05/image4.jpg",
+            "urls": [
+                "https://council.nyc.gov/peter-koo/district-20/"
+            ]
+        },
+        {
+            "addresses": [
+                {
+                    "address": {
+                        "city": "Corona",
+                        "line1": "106-01 Corona Avenue",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NY",
+                        "zip": "11368"
+                    },
+                    "fax": [
+                        "718-565-5937"
+                    ],
+                    "name": "District Office",
+                    "phone": [
+                        "718-651-1917"
+                    ]
+                },
+                {
+                    "address": {
+                        "city": "New York",
+                        "line1": "250 Broadway, Suite 1768",
+                        "line2": null,
+                        "line3": null,
+                        "state": "NEW YORK",
+                        "zip": "10007"
+                    },
+                    "fax": null,
+                    "name": "Legislative Office",
+                    "phone": [
+                        "212-788-6862"
+                    ]
+                }
+            ],
+            "body": "New York City Council",
+            "district": "21",
+            "email": "FMoya@council.nyc.gov",
+            "name": "Francisco Moya",
+            "office": {
+                "level": "locality",
+                "name": "City Council Member",
+                "role": "legislatorUpperBody"
+            },
+            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/66/2018/02/Moya_2017-700x467.jpg",
+            "urls": [
+                "https://council.nyc.gov/francisco-moya/district-21/"
             ]
         },
         {
@@ -917,140 +1051,6 @@
             "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/61/2018/01/Senator-Diaz-highiest-resolution-1-700x429.jpg",
             "urls": [
                 "https://council.nyc.gov/ruben-diaz-sr/district-18/"
-            ]
-        },
-        {
-            "addresses": [
-                {
-                    "address": {
-                        "city": "Bayside",
-                        "line1": "42-40 Bell Boulevard, Suite 507",
-                        "line2": null,
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "11361"
-                    },
-                    "fax": [
-                        "718-631-4100"
-                    ],
-                    "name": "District Office",
-                    "phone": [
-                        "718-619-8611"
-                    ]
-                },
-                {
-                    "address": {
-                        "city": "New York",
-                        "line1": "250 Broadway, Suite 1792",
-                        "line2": null,
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "10007"
-                    },
-                    "fax": [
-                        "212-788-1860"
-                    ],
-                    "name": "Legislative Office",
-                    "phone": [
-                        "212-788-7250"
-                    ]
-                }
-            ],
-            "body": "New York City Council",
-            "district": "19",
-            "email": "district19@council.nyc.gov",
-            "name": "Paul Vallone",
-            "office": {
-                "level": "locality",
-                "name": "City Council Member",
-                "role": "legislatorUpperBody"
-            },
-            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/20/2016/05/paul-vallone.jpg",
-            "urls": [
-                "https://council.nyc.gov/paul-vallone/district-19/"
-            ]
-        },
-        {
-            "addresses": [
-                {
-                    "address": {
-                        "city": "Flushing",
-                        "line1": "135-27 38 Ave, Suite 388",
-                        "line2": null,
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "11354"
-                    },
-                    "fax": [
-                        "718-888-0331"
-                    ],
-                    "name": "District Office",
-                    "phone": [
-                        "718-888-8747"
-                    ]
-                }
-            ],
-            "body": "New York City Council",
-            "district": "20",
-            "email": "pkoo@council.nyc.gov",
-            "name": "Peter Koo",
-            "office": {
-                "level": "locality",
-                "name": "City Council Member",
-                "role": "legislatorUpperBody"
-            },
-            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/21/2016/05/image4.jpg",
-            "urls": [
-                "https://council.nyc.gov/peter-koo/district-20/"
-            ]
-        },
-        {
-            "addresses": [
-                {
-                    "address": {
-                        "city": "Corona",
-                        "line1": "106-01 Corona Avenue",
-                        "line2": null,
-                        "line3": null,
-                        "state": "NY",
-                        "zip": "11368"
-                    },
-                    "fax": [
-                        "718-565-5937"
-                    ],
-                    "name": "District Office",
-                    "phone": [
-                        "718-651-1917"
-                    ]
-                },
-                {
-                    "address": {
-                        "city": "New York",
-                        "line1": "250 Broadway, Suite 1768",
-                        "line2": null,
-                        "line3": null,
-                        "state": "NEW YORK",
-                        "zip": "10007"
-                    },
-                    "fax": null,
-                    "name": "Legislative Office",
-                    "phone": [
-                        "212-788-6862"
-                    ]
-                }
-            ],
-            "body": "New York City Council",
-            "district": "21",
-            "email": "FMoya@council.nyc.gov",
-            "name": "Francisco Moya",
-            "office": {
-                "level": "locality",
-                "name": "City Council Member",
-                "role": "legislatorUpperBody"
-            },
-            "photoUrl": "https://council.nyc.gov/wp-content/uploads/sites/66/2018/02/Moya_2017-700x467.jpg",
-            "urls": [
-                "https://council.nyc.gov/francisco-moya/district-21/"
             ]
         },
         {
