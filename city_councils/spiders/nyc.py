@@ -3,9 +3,9 @@ import requests
 import re
 import logging
 
+from .utils import phoneNumberPattern, getFax, getPhone, getAddress
 
 def extractContractInfoFromLines(lines):
-    phoneNumberPattern = re.compile('(\d{3}-\d{3}-\d{4})')
     phoneLines = [l for l in lines if phoneNumberPattern.search(l)]
 
     # some addresses have BONUS info after so we need to filter that out
@@ -19,50 +19,10 @@ def extractContractInfoFromLines(lines):
         if ', NY' in l:
             break
 
-    addressLine1 = addressLines[0]
-    addressLine2 = None
-    addressLine3 = None
-
-    if len(addressLines) > 2:
-        addressLine2 = addressLines[1]
-    if len(addressLines) > 3:
-        addressLine3 = addressLines[2]
-
-    # New York, NY 10027
-
-    city = None
-    state = 'NY'
-    zipCode = None
-    if ',' in addressLines[-1]:
-        city = addressLines[-1].split(',')[0]
-        # state = addressLines[-1].split(',')[1].strip().split(' ')[0]
-        zipCode = addressLines[-1].split(',')[1].strip().split(' ')[-1]
-
-    faxLine = [l for l in phoneLines if 'fax' in l or 'Fax' in l]
-    faxNumber = None
-    if faxLine:
-        faxMatch = phoneNumberPattern.search(faxLine[0] or '')
-        if faxMatch:
-            faxNumber = faxMatch.groups()[0]
-
-    phoneLine = [l for l in phoneLines if 'phone' in l or 'Phone' in l]
-    phoneNumber = None
-    if phoneLine:
-        phoneMatch = phoneNumberPattern.search(phoneLine[0] or '')
-        if phoneMatch:
-            phoneNumber = phoneMatch.groups()[0]
-
     return {
-        'address': {
-            'line1': addressLine1,
-            'line2': addressLine2,
-            'line3': addressLine3,
-            'city': city,
-            'state': state,
-            'zip': zipCode
-        },
-        'phone': phoneNumber,
-        'fax': faxNumber,
+        'address': getAddress(addressLines),
+        'phone': getPhone(phoneLines),
+        'fax': getFax(phoneLines)
     }
 
 

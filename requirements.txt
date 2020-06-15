@@ -4,3 +4,4 @@ shapely
 geojsonio
 gunicorn
 flask-cors
+usaddress

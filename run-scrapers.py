@@ -4,6 +4,8 @@ import subprocess
 import tempfile
 import json
 import os
+from multiprocessing import Process
+
 
 setting = get_project_settings()
 process = CrawlerProcess(setting)
@@ -37,20 +39,27 @@ def reprocessFile(file, outputRoot):
     }, open(f'data/{outputRoot}.geojson', 'w'))
 
 
+def execute_crawling(spider_name, tempFilename):
+    setting = get_project_settings()
+    setting['FEED_URI'] = tempFilename
+    process2 = CrawlerProcess(setting)
+    process2.crawl(spider_name)
+    process2.start() # the script will block here until the crawling is finished
+
 def runSpiders():
     for spider_name in process.spider_loader.list():
         f = tempfile.NamedTemporaryFile(delete=False)
         tempFilename = f.name + '.json'
         print ("Running spider %s" % (spider_name))
-        setting['FEED_URI'] = tempFilename
-        process2 = CrawlerProcess(setting)
-        process2.crawl(spider_name)
-        process2.start() # the script will block here until the crawling is finished
 
+        p = Process(target=execute_crawling, args=(spider_name, tempFilename))
+        p.start()
+        p.join() # this blocks until the process terminates
         print(tempFilename)
 
         reprocessFile(tempFilename, spider_name)
 
-runSpiders()
+if __name__ == '__main__':
+    runSpiders()
 
 # reprocessFile('tmpwoogplcm.json', 'nyc')
